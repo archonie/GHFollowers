@@ -20,7 +20,7 @@ class TabBarViewController: UITabBarController {
         searchNC.tabBarItem.title = "Search"
         favoritesNC.tabBarItem.title = "Favorites"
         
-        tabBar.tintColor = .label
+        tabBar.tintColor = .systemGreen
         
         setViewControllers([searchNC, favoritesNC], animated: true)
         

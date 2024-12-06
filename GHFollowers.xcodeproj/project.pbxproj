@@ -15,6 +15,8 @@
 		7172C6072D039332004F5549 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7172C6062D039332004F5549 /* TabBarViewController.swift */; };
 		7172C60A2D039361004F5549 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7172C6092D039361004F5549 /* SearchVC.swift */; };
 		7172C60C2D03937B004F5549 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7172C60B2D03937B004F5549 /* FavoritesListVC.swift */; };
+		7172C6122D039558004F5549 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7172C6112D039558004F5549 /* GFButton.swift */; };
+		7172C6142D03976E004F5549 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7172C6132D03976E004F5549 /* GFTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		7172C6062D039332004F5549 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		7172C6092D039361004F5549 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		7172C60B2D03937B004F5549 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		7172C6112D039558004F5549 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		7172C6132D03976E004F5549 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		71DB22812D020C8A0098DC06 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -44,6 +48,9 @@
 		7172C5FE2D03901B004F5549 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				7172C60F2D03953A004F5549 /* Models */,
+				7172C60E2D039536004F5549 /* ViewModels */,
+				7172C60D2D039533004F5549 /* Views */,
 				7172C6052D039315004F5549 /* Controllers */,
 				7172C5F72D03901B004F5549 /* AppDelegate.swift */,
 				7172C5FC2D03901B004F5549 /* SceneDelegate.swift */,
@@ -71,6 +78,37 @@
 				7172C60B2D03937B004F5549 /* FavoritesListVC.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		7172C60D2D039533004F5549 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7172C6102D03953F004F5549 /* General */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7172C60E2D039536004F5549 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7172C60F2D03953A004F5549 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7172C6102D03953F004F5549 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				7172C6112D039558004F5549 /* GFButton.swift */,
+				7172C6132D03976E004F5549 /* GFTextField.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		71DB22782D020C8A0098DC06 = {
@@ -164,7 +202,9 @@
 			files = (
 				7172C60C2D03937B004F5549 /* FavoritesListVC.swift in Sources */,
 				7172C6072D039332004F5549 /* TabBarViewController.swift in Sources */,
+				7172C6142D03976E004F5549 /* GFTextField.swift in Sources */,
 				7172C60A2D039361004F5549 /* SearchVC.swift in Sources */,
+				7172C6122D039558004F5549 /* GFButton.swift in Sources */,
 				7172C5FF2D03901B004F5549 /* AppDelegate.swift in Sources */,
 				7172C6002D03901B004F5549 /* SceneDelegate.swift in Sources */,
 				7172C6012D03901B004F5549 /* ViewController.swift in Sources */,
