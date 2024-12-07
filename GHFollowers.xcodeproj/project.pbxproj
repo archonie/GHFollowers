@@ -24,6 +24,7 @@
 		7172C60C2D03937B004F5549 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7172C60B2D03937B004F5549 /* FavoritesListVC.swift */; };
 		7172C6122D039558004F5549 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7172C6112D039558004F5549 /* GFButton.swift */; };
 		7172C6142D03976E004F5549 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7172C6132D03976E004F5549 /* GFTextField.swift */; };
+		71A217E02D050E6400442B8D /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A217DF2D050E6100442B8D /* GFError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		7172C60B2D03937B004F5549 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		7172C6112D039558004F5549 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		7172C6132D03976E004F5549 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		71A217DF2D050E6100442B8D /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		71DB22812D020C8A0098DC06 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 		7172C5FE2D03901B004F5549 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				71A217DE2D050E5600442B8D /* Utilities */,
 				716EFE8B2D04B4DF00FA3356 /* Managers */,
 				716EFE862D04B1D900FA3356 /* Models */,
 				716EFE842D04AF1A00FA3356 /* Extensions */,
@@ -130,6 +133,14 @@
 				7172C5F92D03901B004F5549 /* Info.plist */,
 			);
 			path = GHFollowers;
+			sourceTree = "<group>";
+		};
+		71A217DE2D050E5600442B8D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				71A217DF2D050E6100442B8D /* GFError.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		71DB22782D020C8A0098DC06 = {
@@ -233,6 +244,7 @@
 				7172C5FF2D03901B004F5549 /* AppDelegate.swift in Sources */,
 				711AC7CE2D047FF600E5F548 /* GFTitleLabel.swift in Sources */,
 				7172C6002D03901B004F5549 /* SceneDelegate.swift in Sources */,
+				71A217E02D050E6400442B8D /* GFError.swift in Sources */,
 				716EFE8D2D04B4EB00FA3356 /* NetworkManager.swift in Sources */,
 				7172C6012D03901B004F5549 /* ViewController.swift in Sources */,
 				711AC7D02D04811A00E5F548 /* GFBodyLabel.swift in Sources */,
