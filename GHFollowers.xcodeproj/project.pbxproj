@@ -27,6 +27,7 @@
 		71A217E02D050E6400442B8D /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A217DF2D050E6100442B8D /* GFError.swift */; };
 		71A217E32D05146500442B8D /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A217E22D05146500442B8D /* FollowerCell.swift */; };
 		71A217E52D0514E000442B8D /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A217E42D0514E000442B8D /* GFAvatarImageView.swift */; };
+		71A217E72D06063200442B8D /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A217E62D06062E00442B8D /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		71A217DF2D050E6100442B8D /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		71A217E22D05146500442B8D /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		71A217E42D0514E000442B8D /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		71A217E62D06062E00442B8D /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		71DB22812D020C8A0098DC06 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,6 +146,7 @@
 		71A217DE2D050E5600442B8D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				71A217E62D06062E00442B8D /* UIHelper.swift */,
 				71A217DF2D050E6100442B8D /* GFError.swift */,
 			);
 			path = Utilities;
@@ -261,6 +264,7 @@
 				711AC7CE2D047FF600E5F548 /* GFTitleLabel.swift in Sources */,
 				7172C6002D03901B004F5549 /* SceneDelegate.swift in Sources */,
 				71A217E02D050E6400442B8D /* GFError.swift in Sources */,
+				71A217E72D06063200442B8D /* UIHelper.swift in Sources */,
 				716EFE8D2D04B4EB00FA3356 /* NetworkManager.swift in Sources */,
 				7172C6012D03901B004F5549 /* ViewController.swift in Sources */,
 				711AC7D02D04811A00E5F548 /* GFBodyLabel.swift in Sources */,

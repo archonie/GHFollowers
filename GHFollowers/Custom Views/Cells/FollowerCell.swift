@@ -28,10 +28,12 @@ class FollowerCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         usernameLabel.text = nil
+        avatarImageView.image = UIImage(named: "avatarPlaceholder")
     }
     
     func set(follower: Follower) {
         usernameLabel.text = follower.login
+        avatarImageView.downloadImage(from: follower.avatarUrl)
     }
     
     private func configure() {
@@ -43,14 +45,12 @@ class FollowerCell: UICollectionViewCell {
             avatarImageView.topAnchor.constraint(equalTo: topAnchor, constant: padding),
             avatarImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
             avatarImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
-            avatarImageView.heightAnchor.constraint(equalTo: contentView.widthAnchor),
-            avatarImageView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
+            avatarImageView.heightAnchor.constraint(equalTo: contentView.widthAnchor, constant: -2*padding),
             
             usernameLabel.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: 12),
             usernameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
             usernameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
             usernameLabel.heightAnchor.constraint(equalToConstant: 20),
         ])
-        
     }
 }
