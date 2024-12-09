@@ -40,12 +40,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     private func createTabbar() -> UITabBarController {
         let tabbar = UITabBarController()
+
         UITabBar.appearance().tintColor = .systemGreen
-        UITabBar.appearance().backgroundColor = .systemBackground
-        //UITabBar.appearance().isTranslucent = false
+
+        let blurEffect = UIBlurEffect(style: .regular)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = tabbar.tabBar.bounds
+        blurView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        tabbar.tabBar.insertSubview(blurView, at: 0)
+
+        
         tabbar.viewControllers = [createSearchNC(), createFavoritesNC()]
+        
         return tabbar
     }
+
     
     private func configureNavigationBar() {
         UINavigationBar.appearance().tintColor = .systemGreen
