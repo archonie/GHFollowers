@@ -9,12 +9,13 @@ import UIKit
 
 class GFItemInfoVC: UIViewController {
 
-    private let stackView = UIStackView()
+    let stackView = UIStackView()
     let itemInfoViewOne = GFItemInfoView()
     let itemInfoViewTwo = GFItemInfoView()
     let actionButton = GFButton()
     
     var user: User!
+    weak var delegate: UserInfoVCDelegate?
     
     init(user: User) {
         super.init(nibName: nil, bundle: nil)
@@ -30,15 +31,16 @@ class GFItemInfoVC: UIViewController {
         configureBackgroundView()
         layoutUI()
         configureStackView()
+        configureActionButton()
     }
     
-    private func configureBackgroundView() {
+    func configureBackgroundView() {
         view.layer.cornerRadius = 18
         view.backgroundColor = .secondarySystemBackground
         
     }
     
-    private func configureStackView() {
+    func configureStackView() {
         stackView.axis = .horizontal
         stackView.distribution = .equalSpacing
         
@@ -46,7 +48,13 @@ class GFItemInfoVC: UIViewController {
         stackView.addArrangedSubview(itemInfoViewTwo)
     }
     
-    private func layoutUI() {
+    func configureActionButton() {
+        actionButton.addTarget(self, action: #selector(didTapActionButton), for: .touchUpInside)
+    }
+    
+    @objc func didTapActionButton() {}
+    
+    func layoutUI() {
         view.addSubview(stackView)
         view.addSubview(actionButton)
         
