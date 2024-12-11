@@ -42,6 +42,7 @@
 		71A217E72D06063200442B8D /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A217E62D06062E00442B8D /* UIHelper.swift */; };
 		71A217EF2D06491800442B8D /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A217EE2D06491800442B8D /* GFEmptyStateView.swift */; };
 		71E902122D0A2F8C0060FA4C /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E902112D0A2F8C0060FA4C /* GFTabBarController.swift */; };
+		71E902142D0A37990060FA4C /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E902132D0A37990060FA4C /* GFAlertContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		71A217EE2D06491800442B8D /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		71DB22812D020C8A0098DC06 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E902112D0A2F8C0060FA4C /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
+		71E902132D0A37990060FA4C /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			children = (
 				71A217EE2D06491800442B8D /* GFEmptyStateView.swift */,
 				716F2B752D089F8E00C7E31B /* GFItemInfoView.swift */,
+				71E902132D0A37990060FA4C /* GFAlertContainerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				716F2B872D09C59B00C7E31B /* FavoriteCell.swift in Sources */,
 				716F2B7A2D08A57100C7E31B /* GFRepoItemVC.swift in Sources */,
 				71A217E52D0514E000442B8D /* GFAvatarImageView.swift in Sources */,
+				71E902142D0A37990060FA4C /* GFAlertContainerView.swift in Sources */,
 				711AC7D22D0481A000E5F548 /* GFAlertVC.swift in Sources */,
 				7122AAE62D07873E0091DDF3 /* UserInfoVC.swift in Sources */,
 				716EFE882D04B1EB00FA3356 /* Follower.swift in Sources */,
