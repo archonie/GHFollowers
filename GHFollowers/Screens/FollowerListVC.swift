@@ -30,6 +30,7 @@ class FollowerListVC: UIViewController {
     init(username: String) {
         super.init(nibName: nil, bundle: nil)
         self.username = username
+        title = username
     }
     
     required init?(coder: NSCoder) {
@@ -48,6 +49,7 @@ class FollowerListVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationItem.hidesSearchBarWhenScrolling = false
     }
     
     private func getFollowers(username: String, page: Int) {
