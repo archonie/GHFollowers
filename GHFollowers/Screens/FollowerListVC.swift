@@ -80,7 +80,7 @@ class FollowerListVC: UIViewController {
     }
     
     private func configureCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
+        collectionView = UICollectionView(frame: view.frame, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
         view.addSubview(collectionView)
         collectionView.delegate = self
         collectionView.backgroundColor = .systemBackground
@@ -204,7 +204,7 @@ extension FollowerListVC: FollowerListVCDelegate {
         hasMoreFollowers = true
         isSearching = false
         title = username
-        collectionView.setContentOffset(.zero, animated: true)
+        collectionView.setContentOffset(CGPoint(x: 0, y: -view.safeAreaInsets.top), animated: true)
         getFollowers(username: username, page: page)
     }
 }
