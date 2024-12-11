@@ -7,7 +7,10 @@
 
 import Foundation
 
+
+/// We don't need this anymore but ill keep it in the GitHub repository in case Ill use it in the future.
 extension String {
+    
     func convertToDate() -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
