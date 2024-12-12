@@ -39,7 +39,6 @@ class FollowerCell: UICollectionViewCell {
             DispatchQueue.main.async {
                 self.avatarImageView.image = image
             }
-            
         }
     }
     

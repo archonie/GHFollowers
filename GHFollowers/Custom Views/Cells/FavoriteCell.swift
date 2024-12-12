@@ -32,7 +32,6 @@ class FavoriteCell: UITableViewCell {
             DispatchQueue.main.async {
                 self.avatarImageView.image = image
             }
-            
         }
     }
     
