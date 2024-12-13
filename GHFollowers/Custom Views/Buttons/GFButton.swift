@@ -8,7 +8,7 @@
 import UIKit
 
 class GFButton: UIButton {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -18,23 +18,38 @@ class GFButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    convenience init(backgroundColor: UIColor, title: String) {
+    convenience init(color: UIColor, title: String, systemImage: UIImage) {
         self.init(frame: .zero)
-        self.backgroundColor = backgroundColor
-        self.setTitle(title, for: .normal)
+        set(color: color, title: title, systemImage: systemImage)
     }
     
-    
     private func configure() {
-        layer.cornerRadius = 10
-        setTitleColor(.white, for: .normal)
-        titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
+        if traitCollection.userInterfaceStyle == .dark {
+            configuration = .tinted()
+        } else {
+            configuration = .filled()
+        }
+        configuration?.cornerStyle = .medium
         translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func set(backgroundColor: UIColor, title: String) {
-        self.backgroundColor = backgroundColor
-        setTitle(title, for: .normal)
+    func set(color: UIColor, title: String, systemImage: UIImage) {
+        if traitCollection.userInterfaceStyle == .dark {
+            // Dark mode styling
+            configuration?.background.strokeColor = color
+            configuration?.baseBackgroundColor = color
+            configuration?.baseForegroundColor = color
+        } else {
+            // Light mode styling
+            configuration?.background.strokeColor = nil
+            configuration?.baseBackgroundColor = color
+            configuration?.baseForegroundColor = .white
+        }
+        
+        configuration?.title = title
+        configuration?.image = systemImage
+        configuration?.imagePadding = 6
+        configuration?.imagePlacement = .leading
     }
     
 }

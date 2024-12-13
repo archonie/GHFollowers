@@ -11,7 +11,7 @@ class SearchVC: UIViewController {
     
     private let logoImageView = UIImageView()
     private let usernameTextField = GFTextField()
-    private let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    private let callToActionButton = GFButton(color: .systemGreen, title: "Get Followers", systemImage: SFSymbols.person3!)
     
     var isUsernameEntered: Bool { return !usernameTextField.text!.isEmpty }
     
@@ -28,6 +28,7 @@ class SearchVC: UIViewController {
         usernameTextField.text = ""
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
     
     private func createDismissKeyboardTapGesture() {
         // .endEditing resigns the first responder when user taps
