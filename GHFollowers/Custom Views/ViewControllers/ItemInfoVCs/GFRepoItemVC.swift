@@ -10,6 +10,7 @@ import UIKit
 protocol GFRepoItemVCDelegate: AnyObject {
     func didTapGitHubProfile(for user: User)
 }
+
 class GFRepoItemVC: GFItemInfoVC {
 
     weak var delegate: GFRepoItemVCDelegate?

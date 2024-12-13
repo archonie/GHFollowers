@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 // PROBABLY USE IT IN THE FUTURE
 extension UITableView {
     

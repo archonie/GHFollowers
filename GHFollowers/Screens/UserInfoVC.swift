@@ -26,7 +26,6 @@ class UserInfoVC: GFDataLoadingVC {
     var username: String!
     weak var delegate: UserInfoVCDelegate?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureVC()
