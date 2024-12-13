@@ -54,15 +54,9 @@ class UserInfoVC: GFDataLoadingVC {
     }
     
     private func configureUIElements(with user: User) {
-        let repoItemVC = GFRepoItemVC(user: user)
-        repoItemVC.delegate = self
-        
-        let followerItemVC = GFFollowerItemVC(user: user)
-        followerItemVC.delegate = self
-        
         add(childVC: GFUserInfoHeaderVC(user: user), to: headerView)
-        add(childVC: repoItemVC, to: itemViewOne)
-        add(childVC: followerItemVC, to: itemViewTwo)
+        add(childVC: GFRepoItemVC(user: user, delegate: self), to: itemViewOne)
+        add(childVC: GFFollowerItemVC(user: user, delegate: self), to: itemViewTwo)
         dateLabel.text = "GitHub since \(user.createdAt.convertToMonthYearFormat())"
     }
     
@@ -111,7 +105,7 @@ class UserInfoVC: GFDataLoadingVC {
     }
 }
 
-extension UserInfoVC: ItemInfoVCDelegate {
+extension UserInfoVC: GFRepoItemVCDelegate, GFFollowerItemVCDelegate {
     
     func didTapGitHubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
