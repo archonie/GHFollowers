@@ -11,8 +11,7 @@ class GFTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UITabBar.appearance().tintColor = .systemGreen
-        
+        configureTabBar()
         self.viewControllers = [createSearchNC(), createFavoritesNC()]
     }
     
@@ -32,17 +31,15 @@ class GFTabBarController: UITabBarController {
         return UINavigationController(rootViewController: favoritesListVC)
     }
 
-    private func createTabbar() -> UITabBarController {
-        let tabbar = UITabBarController()
-        let blurEffect = UIBlurEffect(style: .regular)
+    private func configureTabBar() {
+        UITabBar.appearance().tintColor = .systemGreen
+        let blurEffect = UIBlurEffect(style: .systemUltraThinMaterialDark)
         let blurView = UIVisualEffectView(effect: blurEffect)
         
-        blurView.frame = tabbar.tabBar.bounds
+        blurView.frame = tabBar.bounds
         blurView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        tabbar.tabBar.insertSubview(blurView, at: 0)
-        
-        return tabbar
+        tabBar.insertSubview(blurView, at: 0)
     }
 
 }
